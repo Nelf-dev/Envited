@@ -49,7 +49,7 @@
     box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
 }
 
-.buttonHome {
+.button {
     border: none;
     border-radius: 10px;
     padding: 16px;
@@ -57,6 +57,53 @@
     margin: 2em 0 2em 0;
     color: white;
     background-image: linear-gradient(to right, #8456EC , #E87BF8);
+    
+}
+
+/*****  Create Page *****/
+
+.create {
+    display: flex;
+    flex-direction: column;
+}
+
+.createHeading {
+    margin: 1em 0 1em 0;
+    text-align: center;
+}
+
+.createForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formInput {
+    gap: 10px;
+    margin: 1em 0 1em 0;
+    padding: 10px;
+    width: 80%;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+.formImage {
+    background: linear-gradient(to right, #7d7b82 , #969696);
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.15);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.imageLabel {
+    padding-right: 1em;
 }
 
 

@@ -20,7 +20,7 @@ const Home = () => {
             <img className="imgHome"src={imghome}></img>
 
             {/* Linked Button goes to Create Page */}
-            <Link to="/create"> <button className="buttonHome">🎉 Create my event</button> </Link>
+            <Link to="/create"> <button className="button">🎉 Create my event</button> </Link>
         </div>
     );
 }
