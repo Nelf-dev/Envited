@@ -1,8 +1,45 @@
+:root {
+    /* Primary Palette */
+    --purpledark: #240D57;
+    --purplelight: #501FC1;
+    --grad1: #8456EC; 
+    --grad2: #E87BF8;
+
+    /* Secondary Purples */
+    --secondpdark: #CCB6FF;
+    --secondplight: #EDE5FF;
+
+    /* Neutrals */
+    --darkergrey: #4F4F4F;
+    --darkgrey: #828282;
+    --grey: #BDBDBD;
+    --lightgrey: #E0E0E0;
+    --lightergrey: #F2F2F2;
+    --white: #BDBDBD;
+    --background:rgb(250, 245, 255);
+}   
+
 * {
     padding: 0;
     margin: 0;
     font-family: Helvetica, sans-serif;
     box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+}
+
+h1 {
+    color: var(--purpledark);
+}
+
+p {
+    color: var(--darkergrey);
+}
+
+button {
+    font-weight: bold;
 }
 
 .bold {
@@ -70,6 +107,11 @@
 .createHeading {
     margin: 1em 0 1em 0;
     text-align: center;
+    
+}
+
+.your {
+    color: var(--purplelight);
 }
 
 .createForm {
@@ -79,6 +121,7 @@
 }
 
 .formInput {
+    background-color: var(--background);
     gap: 10px;
     margin: 1em 0 1em 0;
     padding: 10px;
@@ -104,10 +147,16 @@
 
 .imageLabel {
     padding-right: 1em;
+    color: white;
 }
 
 
 /***** Event Page *****/
+
+.event {
+    display: flex;
+    flex-direction: column;
+}
 
 .birthday {
     width: 375px;
@@ -120,6 +169,7 @@
 
 .host {
     margin: 0 2em 0.5em 10px;
+    color: var(--darkgrey);
 }
 
 .details {
@@ -156,4 +206,32 @@
     display: flex;
     align-items: center;
     padding-right: 1em;
+}
+
+.purple {
+    color: var(--purpledark);
+}
+
+.spacing {
+    height: 5em;
+}
+
+
+
+/* Animation for CREATE "Your" */
+
+.wave h1 {
+    display: inline-block;
+    animation: wave 3s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+}
+
+@keyframes wave {
+    0%,40%,100% {
+    transform: translateY(0)
+    }
+    20% {
+    transform: translateY(-5px)
+    }
 }

@@ -7,7 +7,12 @@ const Create = () => {
         <div className="create">
             <div className="createHeading">
                 <h1>Create</h1>
-                <h1 className="headingSpecial">Your</h1>
+                <div className="wave">
+                    <h1 className="your" style={ {"--i":1} }>Y</h1>
+                    <h1 className="your" style={ {"--i":2} }>o</h1>
+                    <h1 className="your" style={ {"--i":3} }>u</h1>
+                    <h1 className="your" style={ {"--i":4} }>r</h1>
+                </div>
                 <h1> Event</h1>
             </div>
 

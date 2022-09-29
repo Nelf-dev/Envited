@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom';
 
 import birthday from '../img/birthday.png';
 import { FaCalendar } from 'react-icons/fa';
-import { GrFormNext, GrLocation } from 'react-icons/gr';
+import { GrFormNext} from 'react-icons/gr';
+import { GoLocation } from 'react-icons/go';
+import { IconContext } from "react-icons";
 
 const Event = () => {
     return (
-        <div>
+        <IconContext.Provider value={{ color: "#501FC1", className: "global-class-name" }}>
+        <div className="event">
             <img className="birthday" src={birthday} alt="Birthday Cake"/>
             <h1 className="eventtitle">Birthday Bash</h1>
             <p className="host">Hosted by <span className="bold">Elysia</span></p>
@@ -18,8 +21,8 @@ const Event = () => {
                         <FaCalendar />
                     </div>
                     <div className="info">
-                        <p className="bold">18 August 6:00PM</p>
-                        <p>to <span className="bold">19 August 1:00PM UTC +10</span></p>
+                        <p className="bold purple">18 August 6:00PM</p>
+                        <p>to <span className="bold">19 August 1:00PM</span> UTC +10</p>
                     </div>
                 </div>
                 <div className="next">
@@ -30,10 +33,10 @@ const Event = () => {
             <div className="details">
                 <div className="iconAndInfo">
                     <div className="icon">
-                        <GrLocation />
+                        <GoLocation />
                     </div>
                     <div className="info">
-                        <p className="bold">Street Name</p>
+                        <p className="bold purple">Street Name</p>
                         <p>Suburb, State, Postcode</p>
                     </div>
                 </div>
@@ -41,8 +44,9 @@ const Event = () => {
                     <GrFormNext />
                 </div>
             </div>
-            <Link to="/"> <button>Home</button> </Link>
+            <div className="spacing"></div>
         </div>
+        </IconContext.Provider>
     );
 }
 
